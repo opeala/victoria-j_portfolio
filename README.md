@@ -1,6 +1,6 @@
-# jackellis.dev
+# Victoria Johnston Portfolio Site
 
-Empty project.
+Creating a portfolio website for Victoria in Svelte 🤞
 
 ## How to run on localhost
 
