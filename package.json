@@ -12,7 +12,8 @@
     "build": "snowpack build"
   },
   "dependencies": {
-    "npm": "^7.10.0",
+    "@rohfle/snowpack-plugin-watchappcss": "0.0.1",
+    "npm": "^7.13.0",
     "svelte": "^3.37.0"
   },
   "devDependencies": {
@@ -20,6 +21,7 @@
     "@snowpack/plugin-postcss": "^1.2.2",
     "@snowpack/plugin-sass": "^1.4.0",
     "@snowpack/plugin-svelte": "^3.6.1",
+    "@snowpack/plugin-webpack": "^2.3.1",
     "autoprefixer": "^10.2.5",
     "eslint": "^7.24.0",
     "eslint-config-prettier": "^8.2.0",
@@ -28,6 +30,7 @@
     "postcss-cli": "^8.3.1",
     "prettier": "^2.2.1",
     "snowpack": "^3.3.4",
+    "stylelint-config-recommended": "^5.0.0",
     "tailwindcss": "^2.1.1"
   }
 }

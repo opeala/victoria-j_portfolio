@@ -4,10 +4,12 @@
   import Navbar from "./components/Navbar/Navbar.svelte";
   import DATA from "./data/data";
   console.log(DATA);
+
+  console.log('ITS WORKING')
 </script>
 <style lang="scss">
 
-  .App {
+  /* .App {
       background: red;
       .App-header {
           padding: 10px;
@@ -21,7 +23,7 @@
     color: purple;
 		font-family: 'Comic Sans MS', cursive;
 		font-size: 2em;
-  }
+  } */
 </style>
 
 <Navbar navlists={DATA.NAVBAR_DATA} header={DATA.HEADER} header_image={DATA.HEADER_IMAGE} />

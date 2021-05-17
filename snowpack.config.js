@@ -12,6 +12,11 @@ module.exports = {
     "@snowpack/plugin-postcss",
     "@snowpack/plugin-sass",
     "@snowpack/plugin-svelte",
+    "@rohfle/snowpack-plugin-watchappcss",
+    // "@snowpack/plugin-webpack",
+    // {
+    //   /* see "Plugin Options" below */
+    // },
   ],
   packageOptions: {
     /* ... */
@@ -22,9 +27,9 @@ module.exports = {
   buildOptions: {
     /* ... */
   },
-  optimize: {
-    bundle: true,
-    minify: true,
-    target: 'es2018',
-  },
+  // optimize: {
+  //   bundle: true,
+  //   minify: true,
+  //   target: "es2020",
+  // },
 };
