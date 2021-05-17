@@ -1,8 +1,12 @@
 <!-- App.svelte -->
 <script>
   /* component logic will go here */
+  import Navbar from "./components/Navbar/Navbar.svelte";
+  import DATA from "./data/data";
+  console.log(DATA);
 </script>
 <style lang="scss">
+
   .App {
       background: red;
       .App-header {
@@ -12,11 +16,16 @@
           }
       }
   }
+
+  P {
+    color: purple;
+		font-family: 'Comic Sans MS', cursive;
+		font-size: 2em;
+  }
 </style>
-<div class="App">
-  <header class="App-header">
-    <a class="App-link text-green-400" href="https://svelte.dev" target="_blank" rel="noopener noreferrer">
-      Learn Svelte
-    </a>
-  </header>
-</div>
+
+<Navbar navlists={DATA.NAVBAR_DATA} header={DATA.HEADER} header_image={DATA.HEADER_IMAGE} />
+
+<p>
+  hello
+</p>
