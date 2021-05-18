@@ -26,7 +26,7 @@
   } */
 </style>
 
-<Navbar navlists={DATA.NAVBAR_DATA} header={DATA.HEADER} header_image={DATA.HEADER_IMAGE} />
+<Navbar navlists={DATA.NAVBAR_DATA} header={DATA.HEADER} />
 
 <p>
   hello

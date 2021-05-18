@@ -1,7 +1,6 @@
 <script>
   export let navlists = [];
   export let header;
-  export let header_image;
   console.log(navlists);
 
   let mobileMenu = {  visibile: false };
@@ -13,7 +12,7 @@
 <!------------------------------------------->
 <!----------------MARKUP----------------------->
 <!------------------------------------------->
-<section id="nav-bar" class="bg-cover bg-center bg-no-repeat sticky top-0 z-10" style="background-image: url({header_image});">
+<section id="nav-bar" class="bg-cover bg-center bg-no-repeat sticky top-0 z-10" style="background-image: url(./media/images/banners-footers/top.png);">
   <nav class="flex flex-col justify-start items-center py-4">
     <a class="" href="/">
       <h1 class="md:text-9xl text-5xl text-white text-center">

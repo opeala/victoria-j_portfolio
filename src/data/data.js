@@ -1,8 +1,6 @@
 /* eslint-disable prettier/prettier */
 const HEADER = "Victoria Johnston";
 
-const HEADER_IMAGE = "../media/images/banners-footers/top.png";
-
 const NAVBAR_DATA = [
   {
     id: 1,
@@ -29,7 +27,6 @@ const NAVBAR_DATA = [
 
 const MOCK_DATA = {
   HEADER,
-  HEADER_IMAGE,
   NAVBAR_DATA,
 };
 export default MOCK_DATA;
