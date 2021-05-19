@@ -1,7 +1,6 @@
 <script>
   export let navlists = [];
   export let header;
-  console.log(navlists);
 
   let mobileMenu = {  visibile: false };
 
@@ -13,7 +12,7 @@
 <!----------------MARKUP----------------------->
 <!------------------------------------------->
 <section id="nav-bar" class="bg-cover bg-center bg-no-repeat sticky top-0 z-10" style="background-image: url(./media/images/banners-footers/top.png);">
-  <nav class="flex flex-col justify-start items-center py-4">
+  <nav class="flex flex-col justify-start items-center py-4 bg-vic-pink">
     <a class="" href="/">
       <h1 class="md:text-9xl text-5xl text-white text-center">
         {header}
@@ -40,11 +39,11 @@
 <!----------------STYLE----------------------->
 <!------------------------------------------->
 <style lang="scss">
-  @import '../../styles/vars';
+  /* @import '../../styles/vars';
 
   #nav-bar {
     nav {
       background: rgba($theme-color, 0.79);
     }
-  }
+  } */
 </style>

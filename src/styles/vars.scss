@@ -1,5 +1,12 @@
 $theme-color: #fb01c3;
 
+// breakpoints:
+$md: 768px;
+
+// Mixins:
+@mixin responsive-ratio($x, $y) {
+  padding-top: unquote(($y / $x) * 100 + "%");
+}
 
 // this is just here so the build runs properly: 
 .snowpack-build-placeholder {

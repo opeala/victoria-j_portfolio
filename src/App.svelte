@@ -2,10 +2,9 @@
 <script>
   /* component logic will go here */
   import Navbar from "./components/Navbar/Navbar.svelte";
+  import Content from "./components/Content/Content.svelte";
+  import Footer from "./components/Footer/Footer.svelte";
   import DATA from "./data/data";
-  console.log(DATA);
-
-  console.log('ITS WORKING')
 </script>
 <style lang="scss">
 
@@ -28,6 +27,6 @@
 
 <Navbar navlists={DATA.NAVBAR_DATA} header={DATA.HEADER} />
 
-<p>
-  hello
-</p>
+<Content content={DATA.CONTENT_DATA} />
+
+<Footer />
