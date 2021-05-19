@@ -7,7 +7,6 @@
     })
     console.log('page content:')
     console.log(content)
-
 </script>
 <!------------------------------------------->
 <!----------------MARKUP----------------------->
@@ -16,7 +15,8 @@
     <main class="max-w-screen-lg mx-auto relative md:pt-8 pt-4 md:px-0 px-2">
         {#if content[0].youtubeVideo}
             <div class="video-container w-full relative">
-                <iframe src="{content[0].youtubeVideo}?controls=0" title="YouTube video player" frameborder="0" class="w-full h-full absolute top-0 right-0 bottom-0 left-0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe 
+                    src="{content[0].youtubeVideo}?controls=0" title="YouTube video player" frameborder="0" loading="lazy" class="w-full h-full absolute top-0 right-0 bottom-0 left-0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>
             </div>
         {/if}
     </main>
