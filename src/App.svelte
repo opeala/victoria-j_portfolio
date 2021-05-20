@@ -4,25 +4,13 @@
   import Navbar from "./components/Navbar/Navbar.svelte";
   import Content from "./components/Content/Content.svelte";
   import Footer from "./components/Footer/Footer.svelte";
+  import Modal from "./components/Modal/Modal.svelte";
   import DATA from "./data/data";
+
+  let modalContent;
 </script>
 <style lang="scss">
 
-  /* .App {
-      background: red;
-      .App-header {
-          padding: 10px;
-          .App-link {
-              font-size: 50px;
-          }
-      }
-  }
-
-  P {
-    color: purple;
-		font-family: 'Comic Sans MS', cursive;
-		font-size: 2em;
-  } */
 </style>
 
 <Navbar navlists={DATA.NAVBAR_DATA} header={DATA.HEADER} />
@@ -30,3 +18,5 @@
 <Content content={DATA.CONTENT_DATA} />
 
 <Footer />
+
+<Modal />

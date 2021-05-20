@@ -1,0 +1,33 @@
+<script>
+    export let title;
+    export let paragraphs = [];
+
+    // youtube placeholder functionality:
+    let placeholder = {
+        shown: false
+    };
+
+    function videoPlaceholderToggle() {
+        placeholder.shown = !placeholder.shown;
+    }
+</script>
+<!------------------------------------------->
+<!----------------MARKUP----------------------->
+<!------------------------------------------->
+<div id="copy-container" class="bg-white md:p-12 p-4">
+    <h1 class="text-center font-bold mb-4">
+        {title}
+    </h1>
+    {#each paragraphs as paragraph}
+        <p class="text-center font-bold mb-4">
+            {paragraph}
+        </p>
+    {/each}
+</div>
+
+<!------------------------------------------->
+<!----------------STYLE----------------------->
+<!------------------------------------------->
+<style lang="scss">
+    /* @import '../../../styles/vars.scss'; */
+</style>

@@ -1,23 +1,33 @@
 <script>
+    import Youtube from "./ContentModules/Youtube.svelte";
+    import Copy from "./ContentModules/Copy.svelte";
+    import Gallery from "./ContentModules/Gallery.svelte";
+
     export let content = [];
-    // let contentPiece;
 
     content.forEach((el) => {
         document.body.dataset.page == el.name && (content = el.content);
     })
     console.log('page content:')
     console.log(content)
+
 </script>
 <!------------------------------------------->
 <!----------------MARKUP----------------------->
 <!------------------------------------------->
 <section id="content-section" class="w-full z-20">
-    <main class="max-w-screen-lg mx-auto relative md:pt-8 pt-4 md:px-0 px-2">
+    <main class="max-w-screen-lg mx-auto relative md:pt-8 pt-4 md:px-0 px-2" style="--imageLeft: url({content[0].leftImage}); --imageRight: url({content[0].rightImage});">
+        <!-- YOUTUBE VIDEO -->
         {#if content[0].youtubeVideo}
-            <div class="video-container w-full relative">
-                <iframe 
-                    src="{content[0].youtubeVideo}?controls=0" title="YouTube video player" frameborder="0" loading="lazy" class="w-full h-full absolute top-0 right-0 bottom-0 left-0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>
-            </div>
+            <Youtube imagePlaceholder={content[0].youtubePlaceholder} video={content[0].youtubeVideo} />
+        {/if}
+
+        {#if content[0].copy}
+            <Copy title={content[0].copy[0].title} paragraphs={content[0].copy[0].paragraphs} />
+        {/if}
+
+        {#if content[0].gallery}
+            <Gallery gallery={content[0].gallery} />
         {/if}
     </main>
 </section>
@@ -29,12 +39,7 @@
 
     #content-section {
         main {
-            /* background: red; */
-
-            .video-container {
-                @include responsive-ratio(16, 9);
-            }
-
+            padding-bottom: calc(8.4% + 0.75rem);
             @media (min-width: $md) {
                 &:before,
                 &::after {
@@ -46,16 +51,16 @@
                     background-position: bottom;
                     background-repeat: no-repeat;
                     width: 420px;
-                    height: 80vh;
+                    height: 75vh;
                     z-index: 25;
                 }
 
                 &::before {
-                    background-image: url(./media/images/webgirl/webgirl_crouching.png);
+                    background-image: var(--imageLeft);
                     left: -420px;
                 }
                 &::after {
-                    background-image: url(./media/images/webgirl/webgirlhips.png);
+                    background-image: var(--imageRight);
                     right: -420px;
                 }
             }
