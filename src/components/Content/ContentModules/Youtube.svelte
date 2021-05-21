@@ -26,6 +26,7 @@
     {#if !placeholder.shown}
         <div 
             role="button" 
+            aria-label="click to reveal video"
             on:click={videoPlaceholderToggle}
             class="w-full h-full absolute top-0 right-0 bottom-0 left-0 cursor-pointer flex justify-center items-center bg-no-repeat bg-center bg-cover group"
             style="background-image: url({imagePlaceholder});">
