@@ -12,3 +12,34 @@ body {
 .bg-vic-pink {
     background: rgba($theme-color, 0.79);
 }
+
+// for gallery modal: 
+.image-container {
+    min-height: 20rem;
+    min-width: 20rem;
+}
+.image-loader {
+    border-top: .5rem solid rgba($theme-color, 0.9);
+    border-right: .5rem solid rgba($theme-color, 0.9);
+    border-bottom: .5rem solid rgba($theme-color, 0.4 );
+    border-left: .5rem solid rgba($theme-color, 0.4   );
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }   
+}

@@ -9,11 +9,13 @@
         const modalImageAlt = e.target.alt;
 
         const imageContainer = `
-        <div>
+        <div class="image-container relative">
             <img 
                 src="${modalImage}" 
                 alt="${modalImageAlt}" 
-                class="rounded">
+                loading="lazy"
+                class="rounded relative z-10">
+            <span class="image-loader"></span>
         </div>`;
 
         modalInner.set(imageContainer)
@@ -44,5 +46,5 @@
 <!----------------STYLE----------------------->
 <!------------------------------------------->
 <style lang="scss">
-    /* @import '../../../styles/vars.scss'; */
+    @import '../../../styles/vars.scss';
 </style>

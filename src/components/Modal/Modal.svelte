@@ -67,7 +67,7 @@
         class="bor rounded bg-white shadow-2xl transition-all max-w-screen-lg	grid m-12 relative p-2">
         <svg 
             xmlns="http://www.w3.org/2000/svg" 
-            class="h-10 w-10 filter drop-shadow-xl transform hover:scale-105 transition-all fill-curren absolute -top-3 -right-3" 
+            class="h-10 w-10 filter drop-shadow-xl transform hover:scale-105 transition-all fill-curren absolute -top-3 -right-3 z-20" 
             viewBox="0 0 20 20"
             role="button"
             on:click={closeModal}
@@ -89,7 +89,7 @@
     @import '../../styles/vars.scss';
 
     #modalInner {
-        max-height: calc(100vh - 100px);
+        max-height: calc(90vh - 100px);
         transform: translateY(-100vh);
         #modal-exit {
             fill: rgba($theme-color, 0.9);
