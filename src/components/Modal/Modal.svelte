@@ -89,7 +89,7 @@
     @import '../../styles/vars.scss';
 
     #modalInner {
-        max-height: calc(90vh - 100px);
+        /* max-height: calc(90vh - 100px); */
         transform: translateY(-100vh);
         #modal-exit {
             fill: rgba($theme-color, 0.9);
