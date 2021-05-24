@@ -13,7 +13,6 @@
             <img 
                 src="${modalImage}" 
                 alt="${modalImageAlt}" 
-                loading="lazy"
                 class="rounded relative z-10">
             <span class="image-loader"></span>
         </div>`;
@@ -37,7 +36,7 @@
                 alt="{picture.alt}" 
                 role="button"
                 on:click={openClose}
-                class="cursor-pointer transform hover:scale-105 transition-all">
+                class="cursor-pointer transform hover:scale-105 transition-all  md:max-h-36 max-h-24">
         {/each}
     </div>
 </div>

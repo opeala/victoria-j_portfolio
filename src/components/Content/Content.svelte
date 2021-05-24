@@ -50,18 +50,18 @@
                     background-size: contain;
                     background-position: bottom;
                     background-repeat: no-repeat;
-                    width: 420px;
+                    width: 450px;
                     height: 75vh;
                     z-index: 25;
                 }
 
                 &::before {
                     background-image: var(--imageLeft);
-                    left: -420px;
+                    left: -450px;
                 }
                 &::after {
                     background-image: var(--imageRight);
-                    right: -420px;
+                    right: -450px;
                 }
             }
         }
