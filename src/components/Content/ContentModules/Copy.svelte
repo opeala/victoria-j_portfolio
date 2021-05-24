@@ -19,8 +19,8 @@
         {title}
     </h1>
     {#each paragraphs as paragraph}
-        <p class="text-center font-bold mb-4">
-            {paragraph}
+        <p class="text-center font-bold md:mb-4 mb-2 md:text-base text-sm">
+            {@html paragraph}
         </p>
     {/each}
 </div>

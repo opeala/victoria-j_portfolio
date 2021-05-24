@@ -17,6 +17,6 @@
 
 <Content content={DATA.CONTENT_DATA} />
 
-<Footer />
+<Footer content={DATA.CONTENT_DATA} socialIcons={DATA.FOOTER_DATA} />
 
 <Modal />

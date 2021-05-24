@@ -16,7 +16,7 @@
 <!----------------MARKUP----------------------->
 <!------------------------------------------->
 <section id="content-section" class="w-full z-20">
-    <main class="max-w-screen-lg mx-auto relative md:pt-8 pt-4 md:px-0 px-2" style="--imageLeft: url({content[0].leftImage}); --imageRight: url({content[0].rightImage});">
+    <main class="max-w-screen-lg mx-auto relative md:pt-8 pt-4 md:px-0 px-2">
         <!-- YOUTUBE VIDEO -->
         {#if content[0].youtubeVideo}
             <Youtube imagePlaceholder={content[0].youtubePlaceholder} video={content[0].youtubeVideo} />
@@ -40,30 +40,6 @@
     #content-section {
         main {
             padding-bottom: calc(8.4% + 0.75rem);
-            @media (min-width: $md) {
-                &:before,
-                &::after {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    background-size: contain;
-                    background-position: bottom;
-                    background-repeat: no-repeat;
-                    width: 450px;
-                    height: 75vh;
-                    z-index: 25;
-                }
-
-                &::before {
-                    background-image: var(--imageLeft);
-                    left: -450px;
-                }
-                &::after {
-                    background-image: var(--imageRight);
-                    right: -450px;
-                }
-            }
         }
     }
 </style>

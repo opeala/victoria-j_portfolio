@@ -164,12 +164,53 @@ const CONTENT_DATA = [
     content : [
       {
         // html: 'contact html',
+        copy: [
+          {
+            title: 'Contact',
+            paragraphs: [
+              'If you like my work and want to know more, please contact me via my email address <u>vajohnston @ yahoo . com</u> or at one of the social links featured below.',
+            ]
+          }
+        ],
         leftImage: './media/images/webgirl/webgirl_umbrella.png',
         rightImage: './media/images/webgirl/webgirl_handstand.png',
       }
     ]
   },
 ]
+
+const FOOTER_DATA = [
+  {
+    id: 1,
+    url: "https://www.linkedin.com/in/victoria-johnston-237259185/",
+    label: "Linkedin",
+    logo: "./media/images/icons/linkedin-icon.svg"
+  },
+  {
+    id: 2,
+    url: "https://www.youtube.com/channel/UCAhUFjJYvUbfg-olVSU1rAg",
+    label: "Youtube",
+    logo: "./media/images/icons/youtube-icon.svg",
+  },
+  {
+    id: 3,
+    url: "https://twitter.com/Victoriaart81",
+    label: "Twitter",
+    logo: "./media/images/icons/twitter-icon.svg",
+  },
+  {
+    id: 4,
+    url: "https://www.instagram.com/toriart81/",
+    label: "Instagram",
+    logo: "./media/images/icons/instagram-icon.svg",
+  },
+  // {
+  //   id: 5,
+  //   url: "mailto:vajohnston@yahoo.com",
+  //   label: "Email Address",
+  //   logo: "./media/images/icons/email-icon.svg",
+  // },
+];
 
 /* 
 Supported content types:
@@ -195,5 +236,6 @@ const MOCK_DATA = {
   HEADER,
   NAVBAR_DATA,
   CONTENT_DATA,
+  FOOTER_DATA,
 };
 export default MOCK_DATA;
