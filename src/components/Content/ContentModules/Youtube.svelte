@@ -1,6 +1,7 @@
 <script>
     export let imagePlaceholder;
     export let video;
+    export let title;
 
     // youtube placeholder functionality:
     let placeholder = { shown: false };
@@ -11,6 +12,9 @@
 <!------------------------------------------->
 <!----------------MARKUP----------------------->
 <!------------------------------------------->
+<h2 class="text-center font-bold -mt-4 mb-4">
+    {title}
+</h2>
 <div id="video-container" class="w-full relative bg-white">
     {#if placeholder.shown}
         <iframe 

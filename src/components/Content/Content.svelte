@@ -19,7 +19,7 @@
     <main class="max-w-screen-lg mx-auto relative md:pt-8 pt-4 md:px-0 px-2">
         <!-- YOUTUBE VIDEO -->
         {#if content[0].youtubeVideo}
-            <Youtube imagePlaceholder={content[0].youtubePlaceholder} video={content[0].youtubeVideo} />
+            <Youtube imagePlaceholder={content[0].youtubePlaceholder} video={content[0].youtubeVideo} title={content[0].title}/>
         {/if}
 
         {#if content[0].copy}

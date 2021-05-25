@@ -30,6 +30,7 @@ const CONTENT_DATA = [
     name: "home",
     content : [
       {
+        title: 'Showreel',
         youtubeVideo: 'https://www.youtube.com/embed/1eC8j9v8RVI',
         youtubePlaceholder: 'https://img.youtube.com/vi/1eC8j9v8RVI/hqdefault.jpg',
         leftImage: './media/images/webgirl/webgirl_crouching.png',

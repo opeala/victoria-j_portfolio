@@ -26,9 +26,9 @@
 <!----------------MARKUP----------------------->
 <!------------------------------------------->
 <div id="gallery-container" class="">
-    <h1 class="text-center font-bold mb-4">
+    <h2 class="text-center font-bold mb-4">
         Click on a thumbnail to see the full size image.
-    </h1>
+    </h2>
     <div id="gallery-thumbnails" class="flex flex-wrap w-full justify-between gap-3">
         {#each gallery as picture}
             <img 
