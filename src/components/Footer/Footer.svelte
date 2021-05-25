@@ -21,11 +21,13 @@
                 <a 
                     href="{icon.url}" 
                     aria-label="{icon.label}"
+                    title="{icon.label}"
                     target="_blank"
                     class="h-10 m-2">
                     <img 
                         src="{icon.logo}" 
                         alt="{icon.label}"
+                        title="{icon.label}"
                         class="h-full">
                 </a>
             {/each}

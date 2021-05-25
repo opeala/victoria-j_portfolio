@@ -15,9 +15,9 @@
 <!----------------MARKUP----------------------->
 <!------------------------------------------->
 <div id="copy-container" class="bg-white md:p-12 p-4">
-    <h1 class="text-center font-bold mb-4">
+    <h2 class="text-center font-bold mb-4">
         {title}
-    </h1>
+    </h2>
     {#each paragraphs as paragraph}
         <p class="text-center font-bold md:mb-4 mb-2 md:text-base text-sm">
             {@html paragraph}
