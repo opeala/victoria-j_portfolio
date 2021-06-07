@@ -36,8 +36,8 @@ const CONTENT_DATA = [
     content : [
       {
         title: 'Showreel',
-        youtubeVideo: 'https://www.youtube.com/embed/1eC8j9v8RVI',
-        youtubePlaceholder: 'https://img.youtube.com/vi/1eC8j9v8RVI/hqdefault.jpg',
+        youtubeVideo: 'https://www.youtube.com/embed/szYBvWX-Fvc',
+        youtubePlaceholder: 'https://img.youtube.com/vi/szYBvWX-Fvc/hqdefault.jpg',
         leftImage: './media/images/webgirl/webgirl_crouching.png',
         rightImage: './media/images/webgirl/webgirlhips.png',
       }
@@ -188,9 +188,23 @@ const CONTENT_DATA = [
     name: "glad-li",
     content : [
       {
-        title: 'Glad-Li Showreel',
-        youtubeVideo: 'https://www.youtube.com/embed/szYBvWX-Fvc',
-        youtubePlaceholder: 'https://img.youtube.com/vi/szYBvWX-Fvc/hqdefault.jpg',
+        gallery: [
+          {
+            thumbnail: './media/images/glad-li/thumbnails/animatic1coloured-thumb.jpg',
+            fullImage: './media/images/glad-li/animatic1coloured.png',
+            alt: 'drawing of woman in 50s style clothing',
+          },
+          {
+            thumbnail: './media/images/glad-li/thumbnails/animatic3coloured-thumb.jpg',
+            fullImage: './media/images/glad-li/animatic3coloured.png',
+            alt: 'alice in wonderland drawing',
+          },
+          {
+            thumbnail: './media/images/glad-li/thumbnails/animatic7coloured-thumb.jpg',
+            fullImage: './media/images/glad-li/animatic7coloured.png',
+            alt: 'ballerina pose drawing',
+          },
+        ],
         // html: 'gallery html',
         // leftImage: './media/images/webgirl/web_girl_kick.png',
         rightImage: './media/images/glad-li/gladlistanding.png',
