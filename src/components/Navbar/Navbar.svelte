@@ -1,18 +1,37 @@
 <script>
   export let navlists = [];
   export let header;
+  export let content = [];
+  content.forEach((el) => {
+    document.body.dataset.page == el.name && (content = el.content);
+  })
 
   let mobileMenu = {  visibile: false };
 
 	function mobileToggle() {
 		mobileMenu.visibile = !mobileMenu.visibile;
 	}
+
+  // alt bg img stuff:
+  const altImg = content[0].altBannerImg ? true : false;
+  const bgImg = altImg ? content[0].altBannerImg : './media/images/banners-footers/top.png';
 </script>
 <!------------------------------------------->
 <!----------------MARKUP----------------------->
 <!------------------------------------------->
-<section id="nav-bar" class="bg-cover bg-center bg-no-repeat sticky top-0 z-10" style="background-image: url(./media/images/banners-footers/top.png);">
-  <nav class="flex flex-col justify-start items-center py-2 bg-vic-pink">
+<section 
+  id="nav-bar" class="bg-cover bg-center bg-no-repeat sticky top-0 z-10"
+  style="background-image: url({bgImg});">
+  <nav 
+    class="
+      flex 
+      flex-col 
+      justify-start 
+      items-center 
+      py-2 
+      {!altImg && 'bg-vic-pink'}
+    "
+  >
     <a class="" href="/" title="Home">
       <h1 class="md:text-8xl text-5xl text-white text-center">
         {header}
@@ -27,7 +46,7 @@
         {#each navlists as list}
           <li class="w-full text-center md:bg-transparent bg-pink-500 md:mb-0 mb-0.5 md:p-0 py-1 px-2 border-b-4 border-transparent hover:border-white">
             <a 
-              class="md:text-3xl text-xl font-bold text-white uppercase md:mx-12 text-center w-full" 
+              class="md:text-3xl text-xl font-bold text-white uppercase md:mx-12 text-center w-full whitespace-nowrap" 
               title="{list.label}"
               href={list.url}>
               {list.label}

@@ -13,10 +13,19 @@
 
 </style>
 
-<Navbar navlists={DATA.NAVBAR_DATA} header={DATA.HEADER} />
+<Navbar 
+  navlists={DATA.NAVBAR_DATA} 
+  header={DATA.HEADER} 
+  content={DATA.CONTENT_DATA} 
+/>
 
-<Content content={DATA.CONTENT_DATA} />
+<Content 
+  content={DATA.CONTENT_DATA} 
+/>
 
-<Footer content={DATA.CONTENT_DATA} socialIcons={DATA.FOOTER_DATA} />
+<Footer 
+  content={DATA.CONTENT_DATA} 
+  socialIcons={DATA.FOOTER_DATA} 
+/>
 
 <Modal />

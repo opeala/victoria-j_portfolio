@@ -7,13 +7,16 @@
     })
     console.log('page content:')
     console.log(content)
+
+    const altImg = content[0].altFooterImg ? true : false;
+    const bgImg = altImg ? content[0].altFooterImg : './media/images/banners-footers/bottom.png';
 </script>
 <!------------------------------------------->
 <!----------------MARKUP----------------------->
 <!------------------------------------------->
 <section id="footer-bar" class="bg-cover bg-center bg-no-repeat z-10 w-full fixed bottom-0"
-    style="background-image: url(./media/images/banners-footers/bottom.png);">
-    <footer class="w-full bg-vic-pink" style="--imageLeft: url({content[0].leftImage}); --imageRight: url({content[0].rightImage});">
+    style="background-image: url({bgImg});">
+    <footer class="w-full {!altImg && 'bg-vic-pink'}" style="--imageLeft: url({content[0].leftImage}); --imageRight: url({content[0].rightImage});">
         <div class="image-holder max-w-screen-lg mx-auto relative">
         </div>
         <div class="social-container flex md:flex-row flex-wrap justify-between items-center mx-auto relative w-max pt-2">

@@ -1,5 +1,6 @@
 <script>
     export let gallery = [];
+    export let content = [];
     import { open } from '../../../data/stores.js';
     import { modalInner } from '../../../data/stores.js';
 
@@ -19,14 +20,14 @@
         </div>`;
 
         modalInner.set(imageContainer)
-	}
+    }
     
 </script>
 <!------------------------------------------->
 <!----------------MARKUP----------------------->
 <!------------------------------------------->
 <div id="gallery-container" class="">
-    <h2 class="text-center font-bold mb-4">
+    <h2 class="text-center font-bold mb-4 {content.altBgImg && 'text-white'}">
         Click on a thumbnail to see the full size image.
     </h2>
     <div id="gallery-thumbnails" class="flex flex-wrap w-full justify-between gap-3">

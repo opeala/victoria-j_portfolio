@@ -2,6 +2,7 @@
     export let imagePlaceholder;
     export let video;
     export let title;
+    export let content = [];
 
     // youtube placeholder functionality:
     let placeholder = { shown: false };
@@ -12,7 +13,7 @@
 <!------------------------------------------->
 <!----------------MARKUP----------------------->
 <!------------------------------------------->
-<h2 class="text-center font-bold -mt-4 mb-4">
+<h2 class="text-center font-bold -mt-4 mb-4 {content.altBgImg && 'text-white'}">
     {title}
 </h2>
 <div id="video-container" class="w-full relative bg-white">

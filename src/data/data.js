@@ -22,6 +22,11 @@ const NAVBAR_DATA = [
     url: "/contact",
     label: "Contact",
   },
+  {
+    id: 5,
+    url: "/glad-li",
+    label: "Glad-Li",
+  },
 ];
 
 const CONTENT_DATA = [
@@ -175,6 +180,23 @@ const CONTENT_DATA = [
         ],
         leftImage: './media/images/webgirl/webgirl_umbrella.png',
         rightImage: './media/images/webgirl/webgirl_handstand.png',
+      }
+    ]
+  },
+  {
+    id: 5,
+    name: "glad-li",
+    content : [
+      {
+        title: 'Glad-Li Showreel',
+        youtubeVideo: 'https://www.youtube.com/embed/szYBvWX-Fvc',
+        youtubePlaceholder: 'https://img.youtube.com/vi/szYBvWX-Fvc/hqdefault.jpg',
+        // html: 'gallery html',
+        // leftImage: './media/images/webgirl/web_girl_kick.png',
+        rightImage: './media/images/glad-li/gladlistanding.png',
+        altBannerImg: './media/images/glad-li/topgladli.png',
+        altBgImg: './media/images/glad-li/gladlibackground.png',
+        altFooterImg: './media/images/glad-li/bottomgladli.png',
       }
     ]
   },
